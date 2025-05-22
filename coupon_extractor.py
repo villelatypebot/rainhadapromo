@@ -25,10 +25,8 @@ def extract_with_vision(image_url):
         }
     """
     try:
-        # Criar client do OpenAI (nova forma de usar a API)
-        client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        
-        response = client.chat.completions.create(
+        # Usar a forma compatível com openai==0.28.0
+        response = openai.ChatCompletion.create(
             model="gpt-4-vision-preview",
             messages=[
                 {
@@ -47,7 +45,7 @@ def extract_with_vision(image_url):
             max_tokens=300
         )
         
-        # Extrair a resposta (nova estrutura de resposta)
+        # Extrair a resposta
         content = response.choices[0].message.content
         
         # Registrar a resposta completa para debug

@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 import uvicorn
 import logging
 
-from monitor import monitor_stories
+from monitor import monitor_stories, process_story_item
 from database import get_db, Cupom, get_latest_cupons, save_cupom
 from scrapers import run_all_scrapers
 from coupon_extractor import extract_with_vision
@@ -141,6 +141,45 @@ def trigger_scrape(background_tasks: BackgroundTasks):
     """Endpoint para iniciar o scraping manualmente"""
     background_tasks.add_task(run_all_scrapers)
     return {"status": "scraping iniciado"}
+
+@app.post("/test-image-direct")
+def test_image_direct(image_url: str = Form(...)):
+    """
+    Testa a extração de um cupom de uma URL de imagem diretamente,
+    simulando um item de story do Instagram
+    """
+    try:
+        # Criar um objeto de story mockado com o mínimo necessário
+        mock_story = {
+            "id": "test_story",
+            "media_type": 1,  # Tipo de mídia para imagem
+            "image_versions": {
+                "items": [
+                    {"url": image_url}
+                ]
+            },
+            "taken_at": int(time.time())
+        }
+        
+        # Usar a função process_story_item do monitor.py
+        logger.info(f"Testando extração direta com imagem: {image_url}")
+        cupom_data = process_story_item(mock_story)
+        
+        if cupom_data:
+            logger.info(f"Cupom encontrado com sucesso: {cupom_data}")
+            return {
+                "status": "success", 
+                "message": "Cupom extraído e salvo com sucesso", 
+                "cupom": cupom_data
+            }
+        else:
+            return {
+                "status": "error", 
+                "message": "Nenhum cupom encontrado na imagem ou erro na extração"
+            }
+    except Exception as e:
+        logger.error(f"Erro ao testar imagem diretamente: {str(e)}")
+        return {"status": "error", "message": str(e)}
 
 @app.post("/add-cupom")
 def add_cupom_manual(

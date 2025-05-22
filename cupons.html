@@ -354,6 +354,23 @@
                             </div>
                         </form>
                     </div>
+                    
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Testar Imagem de Story Diretamente</h3>
+                        <form id="test-direct-form" onsubmit="return testImageDirect(event)">
+                            <div class="form-group">
+                                <label for="direct_image_url">URL da Imagem do Story*</label>
+                                <input type="url" id="direct_image_url" name="image_url" required 
+                                       placeholder="Cole a URL da imagem do Instagram">
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="atualizar-btn button-loading" id="test-direct-btn">
+                                    Testar Extração Direta
+                                    <span class="loading"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -474,6 +491,45 @@
                 })
                 .finally(() => {
                     setButtonLoading('test-vision-btn', false);
+                });
+            
+            return false;
+        }
+        
+        // Função para testar imagem diretamente
+        function testImageDirect(event) {
+            event.preventDefault();
+            setButtonLoading('test-direct-btn', true);
+            addLog('Testando extração direta da imagem...', 'info');
+            
+            const form = document.getElementById('test-direct-form');
+            const formData = new FormData(form);
+            
+            fetch('/test-image-direct', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        addLog(`Extração direta bem-sucedida! Cupom encontrado e salvo: ${data.cupom.codigo}`, 'success');
+                        form.reset();
+                        setTimeout(() => fetchCupons(), 1000);
+                    } else {
+                        addLog(`Erro na extração direta: ${data.message}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao testar extração direta:', error);
+                    addLog(`Erro ao testar extração direta: ${error.message}`, 'error');
+                })
+                .finally(() => {
+                    setButtonLoading('test-direct-btn', false);
                 });
             
             return false;
