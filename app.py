@@ -3,8 +3,8 @@ import time
 import pytz
 from fastapi import FastAPI, BackgroundTasks, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from datetime import datetime, timedelta
@@ -40,9 +40,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Configurar templates
-templates = Jinja2Templates(directory="templates")
 
 # Fuso horário de Brasília
 BRAZIL_TZ = pytz.timezone('America/Sao_Paulo')
@@ -127,19 +124,10 @@ def read_root():
     }
 
 @app.get("/cupons", response_class=HTMLResponse)
-def view_cupons(request: Request, db=Depends(get_db)):
+def view_cupons():
     """Página HTML para visualizar cupons"""
-    # Obter todos os cupons, mais recentes primeiro
-    cupons = db.query(Cupom).order_by(Cupom.data_criacao.desc()).all()
-    
-    # Converter para dicionários para facilitar acesso no template
-    cupom_dicts = [cupom.to_dict() for cupom in cupons]
-    
-    # Renderizar o template HTML
-    return templates.TemplateResponse(
-        "cupons.html",
-        {"request": request, "cupons": cupom_dicts}
-    )
+    # Retornar o arquivo HTML diretamente
+    return FileResponse("cupons.html")
 
 @app.post("/monitor")
 def trigger_monitor(background_tasks: BackgroundTasks):
