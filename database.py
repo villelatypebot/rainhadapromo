@@ -24,6 +24,10 @@ class Cupom(Base):
     data_criacao = Column(DateTime, default=datetime.now)
     enviado = Column(Boolean, default=False)
     detalhes = Column(Text, nullable=True)
+    origem = Column(String(20), default="instagram")  # instagram, site, manual
+    descricao = Column(String(200), nullable=True)
+    valor_desconto = Column(String(50), nullable=True)
+    valido_ate = Column(DateTime, nullable=True)
     
     def to_dict(self):
         return {
@@ -32,9 +36,13 @@ class Cupom(Base):
             "horario": self.horario,
             "imagem_url": self.imagem_url,
             "processed_image_url": self.processed_image_url,
-            "data_criacao": self.data_criacao.isoformat(),
+            "data_criacao": self.data_criacao.isoformat() if self.data_criacao else None,
             "enviado": self.enviado,
-            "detalhes": self.detalhes
+            "detalhes": self.detalhes,
+            "origem": self.origem,
+            "descricao": self.descricao,
+            "valor_desconto": self.valor_desconto,
+            "valido_ate": self.valido_ate.isoformat() if self.valido_ate else None
         }
 
 def init_db():
@@ -52,7 +60,8 @@ def cupom_exists(codigo):
     db = get_db()
     return db.query(Cupom).filter(Cupom.codigo == codigo).first() is not None
 
-def save_cupom(codigo, horario=None, imagem_url=None, detalhes=None):
+def save_cupom(codigo, horario=None, imagem_url=None, detalhes=None, origem="instagram", 
+              descricao=None, valor_desconto=None, valido_ate=None):
     """Salva um novo cupom no banco de dados"""
     if cupom_exists(codigo):
         return False
@@ -62,7 +71,11 @@ def save_cupom(codigo, horario=None, imagem_url=None, detalhes=None):
         codigo=codigo,
         horario=horario,
         imagem_url=imagem_url,
-        detalhes=detalhes
+        detalhes=detalhes,
+        origem=origem,
+        descricao=descricao,
+        valor_desconto=valor_desconto,
+        valido_ate=valido_ate
     )
     db.add(novo_cupom)
     db.commit()
@@ -88,6 +101,16 @@ def update_processed_image(codigo, processed_image_url):
         db.commit()
         return True
     return False
+
+def get_latest_cupons(limit=10, origem=None):
+    """Obtém os cupons mais recentes"""
+    db = get_db()
+    query = db.query(Cupom).order_by(Cupom.data_criacao.desc())
+    
+    if origem:
+        query = query.filter(Cupom.origem == origem)
+        
+    return query.limit(limit).all()
 
 # Inicializar o banco de dados ao importar este módulo
 init_db() 

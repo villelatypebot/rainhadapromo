@@ -59,7 +59,7 @@ OPENAI_API_KEY=sua_chave_openai
 WEBHOOK_URL=https://n8n.zapgrana.online/webhook-test/82616fd6-e936-45fd-a2e3-ab7c5ef60629
 
 # Instagram user para monitorar
-INSTAGRAM_USERNAME=shopee_brasil
+INSTAGRAM_USERNAME=shopee_br
 
 # Database
 DATABASE_URL=sqlite:///cupons.db

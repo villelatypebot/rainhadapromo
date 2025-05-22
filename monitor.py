@@ -3,6 +3,7 @@ import time
 import json
 import requests
 import logging
+import pytz
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
@@ -26,7 +27,10 @@ logger = logging.getLogger("shopee_monitor")
 # Variáveis de configuração
 RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
 RAPIDAPI_HOST = os.getenv("RAPIDAPI_HOST", "mediafy-api.p.rapidapi.com")
-INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "shopee_brasil")
+INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "shopee_br")
+
+# Fuso horário de Brasília
+BRAZIL_TZ = pytz.timezone('America/Sao_Paulo')
 
 def check_is_monitoring_time():
     """
@@ -35,7 +39,8 @@ def check_is_monitoring_time():
     - 10 min antes e 10 min depois de cada hora cheia
     - Entre 9h e 00h
     """
-    now = datetime.now()
+    # Usar o fuso horário do Brasil
+    now = datetime.now(BRAZIL_TZ)
     
     # Se for entre 1h e 8h, não monitora
     if 1 <= now.hour < 9:
@@ -148,7 +153,9 @@ def monitor_stories():
     """
     Função principal para monitorar stories e processar cupons
     """
-    logger.info("Iniciando monitoramento de stories")
+    # Log com horário do Brasil
+    now_br = datetime.now(BRAZIL_TZ)
+    logger.info(f"Iniciando monitoramento de stories - Horário Brasil: {now_br.strftime('%Y-%m-%d %H:%M:%S')}")
     
     if not check_is_monitoring_time():
         logger.info("Fora do horário de monitoramento, pulando verificação")
