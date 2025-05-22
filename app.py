@@ -1,9 +1,9 @@
 import os
 import time
 import pytz
-from fastapi import FastAPI, BackgroundTasks, HTTPException, Depends, Request
+from fastapi import FastAPI, BackgroundTasks, HTTPException, Depends, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse, FileResponse
+from fastapi.responses import HTMLResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
@@ -12,8 +12,9 @@ import uvicorn
 import logging
 
 from monitor import monitor_stories
-from database import get_db, Cupom, get_latest_cupons
+from database import get_db, Cupom, get_latest_cupons, save_cupom
 from scrapers import run_all_scrapers
+from coupon_extractor import extract_with_vision
 
 # Configurar logging
 logging.basicConfig(
@@ -140,6 +141,62 @@ def trigger_scrape(background_tasks: BackgroundTasks):
     """Endpoint para iniciar o scraping manualmente"""
     background_tasks.add_task(run_all_scrapers)
     return {"status": "scraping iniciado"}
+
+@app.post("/add-cupom")
+def add_cupom_manual(
+    codigo: str = Form(...), 
+    descricao: str = Form(None), 
+    valor_desconto: str = Form(None),
+    valido_ate: str = Form(None),
+    db=Depends(get_db)
+):
+    """Endpoint para adicionar um cupom manualmente"""
+    try:
+        # Usar a função save_cupom para garantir consistência
+        cupom_data = save_cupom(
+            codigo=codigo,
+            descricao=descricao,
+            valor_desconto=valor_desconto,
+            valido_ate=valido_ate,
+            origem="manual"
+        )
+        
+        if cupom_data:
+            logger.info(f"Cupom adicionado manualmente: {codigo}")
+            return {"status": "success", "cupom": cupom_data}
+        else:
+            return {"status": "error", "message": "Erro ao salvar cupom"}
+    except Exception as e:
+        logger.error(f"Erro ao adicionar cupom manual: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
+@app.post("/test-vision")
+def test_vision_api(image_url: str = Form(...)):
+    """Testa a extração de cupom usando a API Vision"""
+    try:
+        # Usar a função de extração com Vision
+        result = extract_with_vision(image_url)
+        
+        if result.get("success"):
+            # Se encontrou um cupom, tentar salvá-lo
+            codigo = result.get("codigo")
+            if codigo:
+                save_cupom(
+                    codigo=codigo,
+                    descricao=result.get("descricao"),
+                    valor_desconto=result.get("valor_desconto"),
+                    valido_ate=result.get("horario"),
+                    imagem_url=image_url,
+                    origem="instagram"
+                )
+                logger.info(f"Cupom extraído e salvo via teste: {codigo}")
+                
+            return {"status": "success", "result": result}
+        else:
+            return {"status": "error", "message": result.get("error") or "Nenhum cupom encontrado"}
+    except Exception as e:
+        logger.error(f"Erro ao testar extração via Vision: {str(e)}")
+        return {"status": "error", "message": str(e)}
 
 @app.get("/api/cupons")
 def get_cupons(db=Depends(get_db), origem: str = None, limit: int = 50):

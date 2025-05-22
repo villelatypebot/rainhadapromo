@@ -138,7 +138,6 @@
         }
         .atualizar-btn {
             display: block;
-            margin: 30px auto;
             padding: 12px 24px;
             background-color: #ee4d2d;
             color: white;
@@ -156,6 +155,61 @@
             padding: 50px;
             color: #888;
             grid-column: 1 / -1;
+        }
+        .admin-panel {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .admin-panel h2 {
+            color: #ee4d2d;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-submit {
+            margin-top: 20px;
+        }
+        .collapsible {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .collapsible:after {
+            content: '\002B';
+            font-weight: bold;
+            font-size: 22px;
+            margin-left: 5px;
+        }
+        .active-collapse:after {
+            content: "\2212";
+        }
+        .collapse-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .show-content {
+            max-height: 1000px;
         }
         .action-buttons {
             display: flex;
@@ -252,9 +306,71 @@
         <div class="cupons-grid" id="cupons-container">
             <!-- Os cupons serão carregados via JavaScript -->
         </div>
+        
+        <div class="admin-panel">
+            <h2 class="collapsible" onclick="toggleCollapse(this)">Ferramentas Administrativas</h2>
+            <div class="collapse-content">
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Adicionar Cupom Manualmente</h3>
+                        <form id="add-cupom-form" onsubmit="return addCupomManual(event)">
+                            <div class="form-group">
+                                <label for="codigo">Código do Cupom*</label>
+                                <input type="text" id="codigo" name="codigo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descricao">Descrição</label>
+                                <input type="text" id="descricao" name="descricao">
+                            </div>
+                            <div class="form-group">
+                                <label for="valor_desconto">Valor do Desconto</label>
+                                <input type="text" id="valor_desconto" name="valor_desconto" placeholder="Ex: R$ 15 OFF">
+                            </div>
+                            <div class="form-group">
+                                <label for="valido_ate">Válido Até</label>
+                                <input type="date" id="valido_ate" name="valido_ate">
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="atualizar-btn button-loading" id="add-cupom-btn">
+                                    Adicionar Cupom
+                                    <span class="loading"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Testar Extração de Imagem</h3>
+                        <form id="test-vision-form" onsubmit="return testVisionAPI(event)">
+                            <div class="form-group">
+                                <label for="image_url">URL da Imagem*</label>
+                                <input type="url" id="image_url" name="image_url" required>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="atualizar-btn button-loading" id="test-vision-btn">
+                                    Extrair Cupom da Imagem
+                                    <span class="loading"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script>
+        // Função para controlar o colapso de seções
+        function toggleCollapse(element) {
+            element.classList.toggle("active-collapse");
+            var content = element.nextElementSibling;
+            if (content.classList.contains("show-content")) {
+                content.classList.remove("show-content");
+            } else {
+                content.classList.add("show-content");
+            }
+        }
+        
         // Função para adicionar log
         function addLog(message, type = 'info') {
             const logContainer = document.getElementById('log-container');
@@ -276,6 +392,91 @@
                 button.classList.remove('is-loading');
                 button.disabled = false;
             }
+        }
+        
+        // Função para adicionar cupom manualmente
+        function addCupomManual(event) {
+            event.preventDefault();
+            setButtonLoading('add-cupom-btn', true);
+            addLog('Adicionando cupom manualmente...', 'info');
+            
+            const form = document.getElementById('add-cupom-form');
+            const formData = new FormData(form);
+            
+            fetch('/add-cupom', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        addLog(`Cupom ${data.cupom.codigo} adicionado com sucesso!`, 'success');
+                        form.reset();
+                        setTimeout(() => fetchCupons(), 1000);
+                    } else {
+                        addLog(`Erro ao adicionar cupom: ${data.message}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao adicionar cupom:', error);
+                    addLog(`Erro ao adicionar cupom: ${error.message}`, 'error');
+                })
+                .finally(() => {
+                    setButtonLoading('add-cupom-btn', false);
+                });
+            
+            return false;
+        }
+        
+        // Função para testar a API Vision
+        function testVisionAPI(event) {
+            event.preventDefault();
+            setButtonLoading('test-vision-btn', true);
+            addLog('Testando extração de cupom da imagem...', 'info');
+            
+            const form = document.getElementById('test-vision-form');
+            const formData = new FormData(form);
+            
+            fetch('/test-vision', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        const result = data.result;
+                        addLog(`Extração bem-sucedida! Cupom encontrado: ${result.codigo}`, 'success');
+                        if (result.descricao) {
+                            addLog(`Descrição: ${result.descricao}`, 'info');
+                        }
+                        if (result.horario) {
+                            addLog(`Validade: ${result.horario}`, 'info');
+                        }
+                        form.reset();
+                        setTimeout(() => fetchCupons(), 1000);
+                    } else {
+                        addLog(`Erro na extração: ${data.message}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao testar extração:', error);
+                    addLog(`Erro ao testar extração: ${error.message}`, 'error');
+                })
+                .finally(() => {
+                    setButtonLoading('test-vision-btn', false);
+                });
+            
+            return false;
         }
         
         // Função para buscar os cupons da API
