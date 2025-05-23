@@ -38,6 +38,12 @@ Ao implantar no Render, configure as seguintes variáveis de ambiente no painel 
    - `URL_EMBED_SAFE` - true
    - `OPENAI_API_KEY` - Sua chave API da OpenAI
 
+## Notas de Versão (Maio 2025)
+
+A aplicação foi atualizada para usar os modelos mais recentes da OpenAI:
+* O modelo `gpt-4-vision-preview` foi descontinuado e substituído por `gpt-4o` para análise de imagens
+* Foi adicionado tratamento de erro para lidar com as mudanças na API da OpenAI
+
 ## Endpoints da API
 
 - `/` - Status do servidor
@@ -55,6 +61,11 @@ Ao implantar no Render, configure as seguintes variáveis de ambiente no painel 
 Se encontrar o erro "UTF-8 codec can't decode byte 0xff" no Render:
 1. Verifique se configurou todas as variáveis de ambiente corretamente no painel do Render
 2. Não é necessário fazer upload de arquivo `.env` no Render, o sistema usará as variáveis de ambiente configuradas na plataforma
+
+Se encontrar o erro "The model `gpt-4-vision-preview` has been deprecated":
+1. O código já foi atualizado para usar o novo modelo `gpt-4o`
+2. Verifique se você tem acesso a este modelo em sua conta OpenAI
+3. A chave OPENAI_API_KEY deve ser de uma conta com acesso ao modelo `gpt-4o`
 
 ## Tecnologias Utilizadas
 

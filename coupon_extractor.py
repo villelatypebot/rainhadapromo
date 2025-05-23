@@ -31,7 +31,7 @@ def extract_with_vision(image_url):
     try:
         # Usar a forma compatível com openai==0.28.0
         response = openai.ChatCompletion.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4o", # Atualizado para o modelo atual que suporta visão
             messages=[
                 {
                     "role": "system",
