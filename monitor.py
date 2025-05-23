@@ -11,7 +11,11 @@ from coupon_extractor import extract_with_vision
 from database import save_cupom, cupom_exists, mark_cupom_sent
 from webhook import send_to_webhook
 
-load_dotenv()
+# Tentar carregar o arquivo .env, mas não falhar se não existir
+try:
+    load_dotenv()
+except Exception as e:
+    logging.warning(f"Aviso: Não foi possível carregar o arquivo .env: {str(e)}")
 
 # Configurar logging
 logging.basicConfig(
@@ -25,7 +29,7 @@ logging.basicConfig(
 logger = logging.getLogger("shopee_monitor")
 
 # Variáveis de configuração
-RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
+RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY", "dafe59802dmshe73b7630abf21b8p174a10jsn5bb61c1ca516")
 RAPIDAPI_HOST = os.getenv("RAPIDAPI_HOST", "mediafy-api.p.rapidapi.com")
 INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME", "shopee_br")
 URL_EMBED_SAFE = os.getenv("URL_EMBED_SAFE", "true")

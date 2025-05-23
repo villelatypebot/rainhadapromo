@@ -1,107 +1,66 @@
-# Sistema de Monitoramento de Cupons da Shopee
+# Shopee Cupom Monitor
 
-Este sistema monitora os stories do Instagram da Shopee Brasil, identifica cupons de desconto e os envia para um webhook do n8n para processamento adicional.
+Sistema automatizado para monitorar e extrair cupons promocionais da Shopee a partir de stories do Instagram e sites de promoções.
 
 ## Funcionalidades
 
-- Monitoramento automático dos stories da Shopee em horários específicos
+- Monitoramento automático de stories do Instagram da Shopee
 - Extração de códigos de cupom usando OpenAI Vision API
-- Armazenamento dos cupons em banco de dados SQLite
-- Envio dos códigos via webhook para n8n
-- Evita duplicação de cupons
-- API REST para monitoramento manual e visualização de cupons
+- Web scraping de sites de promoções
+- Interface web para gerenciamento e visualização de cupons
+- Ferramentas administrativas para testes e adição manual
 
-## Requisitos
+## Configuração Local
 
-- Python 3.9+
-- Chave de API do RapidAPI para MediaFy (API do Instagram)
-- Chave de API do OpenAI (ChatGPT Vision)
-- URL do webhook n8n
+1. Clone o repositório
+2. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+   ```
+   RAPIDAPI_KEY=sua_chave_da_rapidapi
+   RAPIDAPI_HOST=mediafy-api.p.rapidapi.com
+   INSTAGRAM_USERNAME=shopee_br
+   URL_EMBED_SAFE=true
+   OPENAI_API_KEY=sua_chave_da_openai
+   ```
+3. Instale as dependências: `pip install -r requirements.txt`
+4. Execute o servidor: `python app.py`
 
-## Estrutura do Projeto
+## Configuração no Render
 
-```
-shopee-cupom/
-├── app.py            # Ponto de entrada principal / FastAPI
-├── monitor.py        # Lógica de monitoramento dos stories
-├── coupon_extractor.py # Extração de códigos via ChatGPT Vision
-├── database.py       # Gerenciamento do banco SQLite
-├── webhook.py        # Envio de dados para n8n
-├── requirements.txt  # Dependências
-├── .env              # Variáveis de ambiente (criar a partir do .env.example)
-├── README.md         # Este arquivo
-└── Procfile          # Para deployment no Render
-```
+Ao implantar no Render, configure as seguintes variáveis de ambiente no painel de configuração:
 
-## Configuração
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/shopee-cupom.git
-cd shopee-cupom
-```
-
-2. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
-
-3. Crie um arquivo `.env` com as seguintes variáveis:
-```
-# API de Instagram (RapidAPI)
-RAPIDAPI_KEY=sua_chave_rapid_api
-RAPIDAPI_HOST=mediafy-api.p.rapidapi.com
-
-# Configuração do ChatGPT Vision
-OPENAI_API_KEY=sua_chave_openai
-
-# Webhook n8n
-WEBHOOK_URL=https://n8n.zapgrana.online/webhook-test/82616fd6-e936-45fd-a2e3-ab7c5ef60629
-
-# Instagram user para monitorar
-INSTAGRAM_USERNAME=shopee_br
-
-# Database
-DATABASE_URL=sqlite:///cupons.db
-```
-
-## Uso Local
-
-Para iniciar o servidor localmente:
-
-```bash
-uvicorn app:app --reload
-```
-
-O servidor estará disponível em `http://localhost:8000`.
+1. Acesse o dashboard do Render
+2. Selecione o serviço do aplicativo
+3. Vá para "Environment"
+4. Adicione as seguintes variáveis:
+   - `RAPIDAPI_KEY` - Sua chave API da RapidAPI (MediaFy API)
+   - `RAPIDAPI_HOST` - mediafy-api.p.rapidapi.com
+   - `INSTAGRAM_USERNAME` - shopee_br
+   - `URL_EMBED_SAFE` - true
+   - `OPENAI_API_KEY` - Sua chave API da OpenAI
 
 ## Endpoints da API
 
-- `GET /`: Status do serviço
-- `POST /monitor`: Iniciar monitoramento manual
-- `GET /cupons`: Listar todos os cupons encontrados
-- `GET /status`: Status do scheduler
+- `/` - Status do servidor
+- `/cupons` - Interface web para visualização de cupons
+- `/monitor` - Trigger manual para verificação de stories
+- `/scrape` - Trigger manual para scraping de sites
+- `/api/cupons` - Lista de cupons em formato JSON
+- `/test-image-direct` - Testar extração diretamente de uma imagem
+- `/test-vision` - Testar extração usando OpenAI Vision API
+- `/add-cupom` - Adicionar cupom manualmente
+- `/status` - Status detalhado do servidor e tarefas agendadas
 
-## Deploy no Render
+## Troubleshooting
 
-1. Conecte seu repositório GitHub ao Render
-2. Crie um novo Web Service
-3. Selecione seu repositório
-4. Configure:
-   - Nome: `shopee-cupom`
-   - Runtime: `Python 3`
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn app:app --host 0.0.0.0 --port $PORT`
-5. Adicione as variáveis de ambiente do arquivo `.env`
-6. Clique em "Create Web Service"
+Se encontrar o erro "UTF-8 codec can't decode byte 0xff" no Render:
+1. Verifique se configurou todas as variáveis de ambiente corretamente no painel do Render
+2. Não é necessário fazer upload de arquivo `.env` no Render, o sistema usará as variáveis de ambiente configuradas na plataforma
 
-## Notas de Funcionamento
+## Tecnologias Utilizadas
 
-- O sistema monitora os stories da Shopee 10 minutos antes, durante, e 10 minutos depois de cada hora, entre 9h e 0h
-- Utiliza ChatGPT Vision para identificar códigos de cupom nas imagens
-- Salva todos os cupons em banco de dados e envia via webhook apenas uma vez
-- Imagens são armazenadas temporariamente para processamento
-
-## Licença
-
-Este projeto está licenciado sob a MIT License. 
+- FastAPI - Framework web
+- OpenAI Vision API - Extração de texto das imagens
+- RapidAPI (MediaFy API) - Acesso aos stories do Instagram
+- APScheduler - Agendamento de tarefas
+- SQLAlchemy - ORM para banco de dados
+- BeautifulSoup - Web scraping 

@@ -11,12 +11,7 @@ from datetime import datetime, timedelta
 import uvicorn
 import logging
 
-from monitor import monitor_stories, process_story_item
-from database import get_db, Cupom, get_latest_cupons, save_cupom
-from scrapers import run_all_scrapers
-from coupon_extractor import extract_with_vision
-
-# Configurar logging
+# Configurar logging antes de importar outros módulos
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -26,6 +21,19 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger("shopee_app")
+
+# Tentar carregar o arquivo .env, mas não falhar se não existir
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    logger.info("Arquivo .env carregado com sucesso")
+except Exception as e:
+    logger.warning(f"Aviso: Não foi possível carregar o arquivo .env: {str(e)}")
+
+from monitor import monitor_stories, process_story_item
+from database import get_db, Cupom, get_latest_cupons, save_cupom
+from scrapers import run_all_scrapers
+from coupon_extractor import extract_with_vision
 
 app = FastAPI(
     title="Shopee Cupom Monitor",

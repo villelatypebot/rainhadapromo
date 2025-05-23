@@ -5,7 +5,11 @@ import requests
 import openai
 from dotenv import load_dotenv
 
-load_dotenv()
+# Tentar carregar o arquivo .env, mas não falhar se não existir
+try:
+    load_dotenv()
+except Exception as e:
+    print(f"Aviso: Não foi possível carregar o arquivo .env: {str(e)}")
 
 # Configurar a API key
 openai.api_key = os.getenv("OPENAI_API_KEY")

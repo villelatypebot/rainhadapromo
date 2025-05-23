@@ -4208,3 +4208,11 @@ ed when the scheduler starts
 2025-05-22 20:52:14,884 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
 2025-05-22 20:52:14,900 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2025-05-22 20:52:14,900 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
+2025-05-22 20:59:58,921 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 20:59:58,922 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 20:59:58,926 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 20:59:58,933 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:00:16,054 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:00:16,066 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:00:16,082 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:00:16,085 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
