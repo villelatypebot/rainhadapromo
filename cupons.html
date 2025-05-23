@@ -241,6 +241,47 @@
         .log-info {
             color: #3498db;
         }
+        .webhook-btn {
+            background-color: #4267B2;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        .webhook-btn:hover {
+            background-color: #365899;
+        }
+        .webhook-status {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .webhook-status h3 {
+            color: #4267B2;
+            margin-bottom: 10px;
+        }
+        .webhook-counts {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+        .webhook-count-item {
+            text-align: center;
+        }
+        .webhook-count-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4267B2;
+        }
+        .webhook-count-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
         .loading {
             display: inline-block;
             width: 20px;
@@ -285,26 +326,53 @@
         </div>
         
         <div class="action-buttons">
-            <button class="atualizar-btn button-loading" id="atualizar-btn" onclick="fetchCupons()">
-                Atualizar Cupons
-                <span class="loading"></span>
+            <button id="atualizar-btn" class="atualizar-btn">
+                <span id="atualizar-text">Atualizar Cupons</span>
+                <span id="atualizar-loading" class="loading hidden"></span>
             </button>
-            <button class="atualizar-btn button-loading" id="monitor-btn" onclick="triggerMonitor()">
-                Verificar Stories Agora
-                <span class="loading"></span>
+            <button id="verificar-stories-btn" class="atualizar-btn">
+                <span id="verificar-stories-text">Verificar Stories Agora</span>
+                <span id="verificar-stories-loading" class="loading hidden"></span>
             </button>
-            <button class="atualizar-btn button-loading" id="scrape-btn" onclick="triggerScrape()">
-                Verificar Sites Agora
-                <span class="loading"></span>
+            <button id="verificar-sites-btn" class="atualizar-btn">
+                <span id="verificar-sites-text">Verificar Sites Agora</span>
+                <span id="verificar-sites-loading" class="loading hidden"></span>
+            </button>
+            <button id="enviar-todos-webhook-btn" class="atualizar-btn" style="background-color: #4267B2;">
+                <span id="enviar-todos-webhook-text">Enviar Todos para Webhook</span>
+                <span id="enviar-todos-webhook-loading" class="loading hidden"></span>
             </button>
         </div>
         
-        <div class="log-container" id="log-container">
-            <div class="log-entry log-info">Sistema iniciado. Aguardando ações.</div>
+        <div class="webhook-status" id="webhook-status-container">
+            <h3>Status do Webhook</h3>
+            <div class="webhook-counts">
+                <div class="webhook-count-item">
+                    <div class="webhook-count-value" id="webhook-total">0</div>
+                    <div class="webhook-count-label">Total de Cupons</div>
+                </div>
+                <div class="webhook-count-item">
+                    <div class="webhook-count-value" id="webhook-enviados">0</div>
+                    <div class="webhook-count-label">Enviados</div>
+                </div>
+                <div class="webhook-count-item">
+                    <div class="webhook-count-value" id="webhook-pendentes">0</div>
+                    <div class="webhook-count-label">Pendentes</div>
+                </div>
+            </div>
+            <div>
+                <h4>Cupons Pendentes</h4>
+                <div id="webhook-pendentes-lista"></div>
+            </div>
+        </div>
+        
+        <div class="log-container">
+            <div id="log"></div>
         </div>
         
         <div class="cupons-grid" id="cupons-container">
-            <!-- Os cupons serão carregados via JavaScript -->
+            <!-- Cupons serão adicionados aqui dinamicamente -->
+            <div class="sem-cupons">Nenhum cupom encontrado</div>
         </div>
         
         <div class="admin-panel">
@@ -390,7 +458,7 @@
         
         // Função para adicionar log
         function addLog(message, type = 'info') {
-            const logContainer = document.getElementById('log-container');
+            const logContainer = document.getElementById('log');
             const logEntry = document.createElement('div');
             logEntry.className = `log-entry log-${type}`;
             const timestamp = new Date().toLocaleTimeString();
@@ -563,7 +631,7 @@
         
         // Função para verificar stories manualmente
         function triggerMonitor() {
-            setButtonLoading('monitor-btn', true);
+            setButtonLoading('verificar-stories-btn', true);
             addLog('Iniciando verificação de stories do Instagram...', 'info');
             
             fetch('/monitor', {
@@ -588,38 +656,122 @@
                     addLog(`Erro ao iniciar verificação: ${error.message}`, 'error');
                 })
                 .finally(() => {
-                    setButtonLoading('monitor-btn', false);
+                    setButtonLoading('verificar-stories-btn', false);
                 });
         }
         
         // Função para verificar sites manualmente
         function triggerScrape() {
-            setButtonLoading('scrape-btn', true);
+            setButtonLoading('verificar-sites-btn', true);
             addLog('Iniciando verificação de sites de cupons...', 'info');
             
             fetch('/scrape', {
                 method: 'POST'
             })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Erro HTTP: ${response.status}`);
-                    }
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
-                    addLog('Verificação de sites iniciada com sucesso!', 'success');
-                    // Após alguns segundos, recarregar os cupons
-                    setTimeout(() => {
-                        addLog('Recarregando cupons após verificação...', 'info');
-                        fetchCupons();
-                    }, 5000);
+                    if (data.status === "scraping iniciado") {
+                        addLog('Verificação de sites iniciada com sucesso. Por favor, aguarde alguns instantes e atualize a página.', 'success');
+                    } else {
+                        addLog('Erro ao iniciar verificação de sites.', 'error');
+                    }
                 })
                 .catch(error => {
-                    console.error('Erro ao iniciar scraping:', error);
-                    addLog(`Erro ao iniciar verificação de sites: ${error.message}`, 'error');
+                    console.error('Erro:', error);
+                    addLog(`Erro ao iniciar verificação de sites: ${error}`, 'error');
                 })
                 .finally(() => {
-                    setButtonLoading('scrape-btn', false);
+                    setButtonLoading('verificar-sites-btn', false);
+                });
+        }
+
+        // Funções relacionadas ao webhook
+        function enviarTodosWebhook() {
+            setButtonLoading('enviar-todos-webhook-btn', true);
+            addLog('Enviando todos os cupons pendentes para o webhook...', 'info');
+            
+            fetch('/webhook/send-all', {
+                method: 'POST'
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        addLog(data.message, 'success');
+                    } else if (data.status === "info") {
+                        addLog(data.message, 'info');
+                    } else {
+                        addLog(`Erro: ${data.message}`, 'error');
+                    }
+                    carregarStatusWebhook();
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    addLog(`Erro ao enviar cupons para webhook: ${error}`, 'error');
+                })
+                .finally(() => {
+                    setButtonLoading('enviar-todos-webhook-btn', false);
+                });
+        }
+
+        function enviarCupomWebhook(codigo) {
+            addLog(`Enviando cupom ${codigo} para webhook...`, 'info');
+            
+            const formData = new FormData();
+            formData.append('codigo', codigo);
+            
+            fetch('/webhook/send-cupom', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        addLog(data.message, 'success');
+                    } else {
+                        addLog(`Erro: ${data.message}`, 'error');
+                    }
+                    carregarStatusWebhook();
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    addLog(`Erro ao enviar cupom para webhook: ${error}`, 'error');
+                });
+        }
+
+        function carregarStatusWebhook() {
+            fetch('/webhook/status')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        document.getElementById('webhook-total').textContent = data.total_cupons;
+                        document.getElementById('webhook-enviados').textContent = data.enviados;
+                        document.getElementById('webhook-pendentes').textContent = data.pendentes;
+                        
+                        // Mostrar lista de cupons pendentes
+                        const listaPendentes = document.getElementById('webhook-pendentes-lista');
+                        listaPendentes.innerHTML = '';
+                        
+                        if (data.cupons_pendentes.length === 0) {
+                            listaPendentes.innerHTML = '<p>Não há cupons pendentes</p>';
+                        } else {
+                            data.cupons_pendentes.forEach(cupom => {
+                                const cupomEl = document.createElement('div');
+                                cupomEl.innerHTML = `
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin: 5px 0; padding: 8px; border: 1px solid #eee; border-radius: 4px;">
+                                        <strong>${cupom.codigo}</strong>
+                                        <button class="webhook-btn" onclick="enviarCupomWebhook('${cupom.codigo}')">Enviar</button>
+                                    </div>
+                                `;
+                                listaPendentes.appendChild(cupomEl);
+                            });
+                        }
+                    } else {
+                        addLog(`Erro ao carregar status do webhook: ${data.message}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    addLog(`Erro ao carregar status do webhook: ${error}`, 'error');
                 });
         }
         
@@ -666,6 +818,11 @@
                     </div>
                     
                     ${validadeFormatada ? `<div class="cupom-validade">Válido até: ${validadeFormatada}</div>` : ''}
+                    
+                    ${cupom.enviado ? 
+                        '<div style="text-align: right; margin-top: 10px;"><span style="color: #00b894; font-size: 0.8rem;">✓ Enviado para webhook</span></div>' : 
+                        `<div style="text-align: right; margin-top: 10px;"><button class="webhook-btn" onclick="enviarCupomWebhook('${cupom.codigo}')">Enviar para webhook</button></div>`
+                    }
                 </div>
                 `;
             });
@@ -745,6 +902,15 @@
                     aplicarFiltro(filter);
                 });
             });
+            
+            // Carregar status do webhook
+            carregarStatusWebhook();
+            
+            // Adicionar event listeners aos botões
+            document.getElementById('atualizar-btn').addEventListener('click', fetchCupons);
+            document.getElementById('verificar-stories-btn').addEventListener('click', triggerMonitor);
+            document.getElementById('verificar-sites-btn').addEventListener('click', triggerScrape);
+            document.getElementById('enviar-todos-webhook-btn').addEventListener('click', enviarTodosWebhook);
         });
     </script>
 </body>
