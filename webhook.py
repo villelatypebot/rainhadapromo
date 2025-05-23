@@ -14,7 +14,7 @@ try:
 except Exception as e:
     logger.warning(f"Aviso: Não foi possível carregar o arquivo .env em webhook.py: {str(e)}")
 
-WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://n8n.zapgrana.online/webhook-test/82616fd6-e936-45fd-a2e3-ab7c5ef60629")
+WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://webhook.zapgrana.online/webhook/82616fd6-e936-45fd-a2e3-ab7c5ef60629")
 
 def send_to_webhook(cupom_data):
     """
