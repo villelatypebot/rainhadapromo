@@ -6548,3 +6548,812 @@ heduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
 2025-05-22 21:06:47,970 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:06:47 -03], next run at: 2025-05-22 21:06:47 -03)" executed successfully
 2025-05-22 21:06:48,012 - shopee_scraper - INFO - Scraping finalizado. Total de cupons encontrados: 0
 2025-05-22 21:06:48,013 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:06:47 -03], next run at: 2025-05-22 21:06:47 -03)" executed successfully
+2025-05-22 21:09:10,552 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-05-22 21:09:10,552 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
+2025-05-22 21:09:10,629 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-05-22 21:09:10,630 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
+2025-05-22 21:09:10,645 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-05-22 21:09:10,645 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
+2025-05-22 21:09:10,708 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-05-22 21:09:10,708 - shopee_app - INFO - Aplicação encerrada e scheduler desligado
+2025-05-22 21:09:11,400 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,497 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,503 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,556 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,976 - database - WARNING - Aviso: Não foi possível carregar o arquivo .env em database.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,991 - database - INFO - Banco de dados inicializado com sucesso
+2025-05-22 21:09:11,994 - shopee_monitor - WARNING - Aviso: Não foi possível carregar o arquivo .env em webhook.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:11,995 - root - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,052 - database - WARNING - Aviso: Não foi possível carregar o arquivo .env em database.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,066 - database - WARNING - Aviso: Não foi possível carregar o arquivo .env em database.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,070 - database - INFO - Banco de dados inicializado com sucesso
+2025-05-22 21:09:12,071 - shopee_monitor - WARNING - Aviso: Não foi possível carregar o arquivo .env em webhook.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,072 - root - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,083 - database - INFO - Banco de dados inicializado com sucesso
+2025-05-22 21:09:12,085 - shopee_monitor - WARNING - Aviso: Não foi possível carregar o arquivo .env em webhook.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,086 - root - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,121 - database - WARNING - Aviso: Não foi possível carregar o arquivo .env em database.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,140 - database - INFO - Banco de dados inicializado com sucesso
+2025-05-22 21:09:12,140 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,141 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,141 - shopee_monitor - WARNING - Aviso: Não foi possível carregar o arquivo .env em webhook.py: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,141 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,141 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,141 - root - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,142 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,142 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,143 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,143 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,144 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,144 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,145 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,145 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,145 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,146 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,146 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,146 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,148 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,148 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,148 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,149 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,149 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,150 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,150 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,151 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,151 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,151 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,153 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,153 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,155 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,155 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,156 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,156 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,157 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,157 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,158 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,158 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,158 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,159 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,159 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,159 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,160 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,160 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,160 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,161 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,161 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,161 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,162 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,162 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,162 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,163 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,163 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,164 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,164 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,164 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,166 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,201 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,202 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,202 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,203 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,203 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,204 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,204 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,204 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,205 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,205 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,206 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,206 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,206 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,207 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,207 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,208 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,208 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,208 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,208 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,209 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,209 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,209 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,209 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,209 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,210 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,211 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,212 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,212 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,212 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,212 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,212 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,213 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,213 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,213 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,213 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,214 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,214 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,214 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,214 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,215 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,216 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,216 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,216 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,216 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,217 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,219 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,219 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,219 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,219 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,219 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,224 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,224 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,225 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,226 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,226 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,229 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,229 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,229 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,230 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,230 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,230 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,231 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,231 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,232 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,232 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,234 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,234 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,234 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,235 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,235 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,235 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,236 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,236 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,236 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,237 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,237 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,237 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,238 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,239 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,239 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,239 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,239 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,240 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,240 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,240 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,240 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,240 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,241 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,241 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,241 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,241 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,241 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,242 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,242 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,242 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,242 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,242 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,243 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,243 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,243 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,243 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,243 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,244 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,244 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,244 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,244 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,245 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,246 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,246 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,246 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,247 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+led when the scheduler starts
+2025-05-22 21:09:12,248 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,248 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,248 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,249 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,249 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,249 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,249 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,250 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,250 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,250 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,251 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,251 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,251 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,252 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,252 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,252 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,252 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,253 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,253 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,253 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,254 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,254 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,254 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,255 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,255 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,255 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,256 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,256 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,257 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,257 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,257 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,257 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,258 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,259 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,259 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,259 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+led when the scheduler starts
+2025-05-22 21:09:12,260 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,260 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,260 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,260 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,261 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,261 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,261 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,261 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,262 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,262 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,262 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,262 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,263 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,263 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,263 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,264 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,264 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,265 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,265 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,265 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,265 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,266 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,267 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,267 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,268 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,268 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,269 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,269 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,270 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,271 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,271 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,272 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,272 - apscheduler.scheduler - INFO - Scheduler started
+2025-05-22 21:09:12,273 - shopee_app - INFO - Aplicação iniciada e scheduler configurado - Horário Brasil: 2025-05-22 21:09:12
+2025-05-22 21:09:12,283 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,284 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,286 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,286 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,286 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,287 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,287 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,288 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,288 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,288 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,289 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,289 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,289 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,290 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,290 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,290 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,291 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,291 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,292 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,292 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,292 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,292 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,293 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,293 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,293 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,294 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,294 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,295 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,295 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,295 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,296 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,296 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,297 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,297 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,297 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,298 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,298 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,298 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,299 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,299 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,299 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,300 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,300 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,301 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,301 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,301 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,302 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,302 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,302 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,303 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,304 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,304 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,304 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,304 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,305 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,306 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,306 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,306 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,306 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,307 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,308 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,308 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,309 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,309 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,309 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,309 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,310 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,310 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,310 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,311 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,311 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,311 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,311 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,312 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,312 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,312 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,312 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,313 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,313 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,313 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,313 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,313 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,314 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,314 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,314 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,315 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,315 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,315 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,316 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,316 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,316 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,316 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,317 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,317 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,317 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,318 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,318 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,318 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,318 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,319 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,319 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,319 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,319 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,319 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,320 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,320 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,320 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,320 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,321 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,321 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,321 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,322 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,322 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,322 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,322 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,323 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,323 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,323 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,323 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,323 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,324 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,325 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,325 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,325 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,325 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,325 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,326 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,327 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,327 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,327 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,327 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,327 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,328 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,328 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,328 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,328 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,328 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,329 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,330 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,330 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,330 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,330 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,331 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,331 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+led when the scheduler starts
+2025-05-22 21:09:12,331 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,331 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,331 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,332 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,332 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,332 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,332 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,333 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,333 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,333 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,333 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,333 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,334 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,334 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,334 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,334 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,334 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,335 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,335 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,336 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,336 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,336 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,336 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,337 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,337 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,337 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,337 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,338 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,338 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,338 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,338 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,339 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,339 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+led when the scheduler starts
+2025-05-22 21:09:12,340 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,340 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,340 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,340 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,341 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,341 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,341 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,341 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,342 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,342 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,342 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,342 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,343 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+led when the scheduler starts
+2025-05-22 21:09:12,343 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,343 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,344 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,344 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,345 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,345 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,345 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,346 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,346 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,346 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,346 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,347 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,347 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,347 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,348 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,348 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,349 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,349 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,350 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,351 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,351 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,352 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,353 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,354 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,355 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,356 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,356 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,356 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+
+2025-05-22 21:09:12,357 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,357 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,357 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,358 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,358 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,359 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,359 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,359 - apscheduler.scheduler - INFO - Scheduler started
+2025-05-22 21:09:12,359 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,360 - shopee_app - INFO - Aplicação iniciada e scheduler configurado - Horário Brasil: 2025-05-22 21:09:12
+2025-05-22 21:09:12,360 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,361 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,361 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,362 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,362 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,363 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,363 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,364 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,364 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,365 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,365 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,365 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,366 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,366 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,367 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,367 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,368 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,368 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,369 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,369 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,370 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,370 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,371 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,371 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,372 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,372 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,373 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,373 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,373 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,374 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,374 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,375 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,375 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,376 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,376 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,376 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,377 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,377 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,377 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,378 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,378 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,379 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,379 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,380 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,380 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,381 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,381 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,382 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,382 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,383 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,383 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,384 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,384 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,384 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,384 - shopee_app - WARNING - Aviso: Não foi possível carregar o arquivo .env: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-22 21:09:12,385 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,385 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,385 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,386 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,386 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,386 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,386 - apscheduler.scheduler - INFO - Scheduler started
+2025-05-22 21:09:12,387 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,387 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,387 - shopee_app - INFO - Aplicação iniciada e scheduler configurado - Horário Brasil: 2025-05-22 21:09:12
+2025-05-22 21:09:12,388 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,388 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,389 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,389 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,389 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,390 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,390 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,391 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,391 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,391 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,392 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,392 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,392 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,394 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,394 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,394 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,395 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,395 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,396 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,396 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,397 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,397 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,397 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,398 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,398 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,398 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,399 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,399 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,400 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,400 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,400 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,401 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,401 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,402 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,402 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,402 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,403 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,403 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,404 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,404 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,404 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,405 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,405 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,406 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,406 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,407 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,407 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,407 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,408 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,408 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,409 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,410 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,411 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,411 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,412 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-22 21:09:12,428 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,450 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,471 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,490 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,509 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,511 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,512 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,512 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,512 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,513 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,513 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,513 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,514 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,514 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,514 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,515 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,515 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,515 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,516 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,516 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,516 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,517 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,517 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,517 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,518 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,518 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,518 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,519 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,519 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,519 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,520 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,520 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,520 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,521 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,521 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,521 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,522 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,522 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,522 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,523 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,523 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,523 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,524 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,524 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,524 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,524 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,525 - apscheduler.scheduler - INFO - Added job "monitor_stories" to job store "default"
+2025-05-22 21:09:12,528 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,529 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,530 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,531 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,531 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,532 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,533 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,534 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,535 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,536 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,536 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,537 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,538 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,538 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,538 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,539 - apscheduler.scheduler - INFO - Added job "run_all_scrapers" to job store "default"
+2025-05-22 21:09:12,539 - apscheduler.scheduler - INFO - Scheduler started
+2025-05-22 21:09:12,539 - shopee_app - INFO - Aplicação iniciada e scheduler configurado - Horário Brasil: 2025-05-22 21:09:12
+2025-05-22 21:09:42,242 - apscheduler.executors.default - INFO - Running job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" (scheduled at 2025-05-22 21:09:42.229741-03:00)
+2025-05-22 21:09:42,242 - apscheduler.scheduler - INFO - Removed job initial_scraping
+2025-05-22 21:09:42,242 - shopee_scraper - INFO - Iniciando scraping do PromoGeniais
+2025-05-22 21:09:42,319 - apscheduler.executors.default - INFO - Running job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" (scheduled at 2025-05-22 21:09:42.308530-03:00)
+2025-05-22 21:09:42,320 - apscheduler.scheduler - INFO - Removed job initial_scraping
+2025-05-22 21:09:42,320 - shopee_scraper - INFO - Iniciando scraping do PromoGeniais
+2025-05-22 21:09:42,350 - apscheduler.executors.default - INFO - Running job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" (scheduled at 2025-05-22 21:09:42.347426-03:00)
+2025-05-22 21:09:42,350 - apscheduler.scheduler - INFO - Removed job initial_scraping
+2025-05-22 21:09:42,351 - shopee_scraper - INFO - Iniciando scraping do PromoGeniais
+2025-05-22 21:09:42,427 - apscheduler.executors.default - INFO - Running job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" (scheduled at 2025-05-22 21:09:42.412447-03:00)
+2025-05-22 21:09:42,427 - apscheduler.scheduler - INFO - Removed job initial_scraping
+2025-05-22 21:09:42,428 - shopee_scraper - INFO - Iniciando scraping do PromoGeniais
+2025-05-22 21:09:43,013 - shopee_scraper - INFO - Scraping finalizado. Total de cupons encontrados: 0
+2025-05-22 21:09:43,014 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" executed successfully
+2025-05-22 21:09:43,168 - shopee_scraper - INFO - Scraping finalizado. Total de cupons encontrados: 0
+2025-05-22 21:09:43,169 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" executed successfully
+2025-05-22 21:09:43,189 - shopee_scraper - INFO - Scraping finalizado. Total de cupons encontrados: 0
+2025-05-22 21:09:43,189 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" executed successfully
+2025-05-22 21:09:43,247 - shopee_scraper - INFO - Scraping finalizado. Total de cupons encontrados: 0
+2025-05-22 21:09:43,248 - apscheduler.executors.default - INFO - Job "run_all_scrapers (trigger: date[2025-05-22 21:09:42 -03], next run at: 2025-05-22 21:09:42 -03)" executed successfully
