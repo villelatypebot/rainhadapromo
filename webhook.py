@@ -4,9 +4,15 @@ import requests
 import logging
 from dotenv import load_dotenv
 
-load_dotenv()
-
+# Configurar logging básico caso não esteja configurado
 logger = logging.getLogger("shopee_monitor")
+
+# Tentar carregar o arquivo .env, mas não falhar se não existir
+try:
+    load_dotenv()
+    logger.info("Arquivo .env carregado com sucesso em webhook.py")
+except Exception as e:
+    logger.warning(f"Aviso: Não foi possível carregar o arquivo .env em webhook.py: {str(e)}")
 
 WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://n8n.zapgrana.online/webhook-test/82616fd6-e936-45fd-a2e3-ab7c5ef60629")
 

@@ -5,8 +5,18 @@ from sqlalchemy import create_engine, Column, Integer, String, DateTime, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
+import logging
 
-load_dotenv()
+# Configurar logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("database")
+
+# Tentar carregar o arquivo .env, mas não falhar se não existir
+try:
+    load_dotenv()
+    logger.info("Arquivo .env carregado com sucesso em database.py")
+except Exception as e:
+    logger.warning(f"Aviso: Não foi possível carregar o arquivo .env em database.py: {str(e)}")
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///cupons.db")
 engine = create_engine(DATABASE_URL)
@@ -113,4 +123,8 @@ def get_latest_cupons(limit=10, origem=None):
     return query.limit(limit).all()
 
 # Inicializar o banco de dados ao importar este módulo
-init_db() 
+try:
+    init_db()
+    logger.info("Banco de dados inicializado com sucesso")
+except Exception as e:
+    logger.error(f"Erro ao inicializar o banco de dados: {str(e)}") 
